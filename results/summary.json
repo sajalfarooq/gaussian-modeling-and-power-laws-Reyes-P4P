@@ -1,0 +1,46 @@
+{
+  "input_sha256": "03c7ede73f7abc1348fe4bd22ebdfac0ccebc072888fdc355195bd47aad99d5c",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "seed": 20261124,
+  "trials": 4999,
+  "n": 1000,
+  "mean": 1.0013207333474805,
+  "sigma_mle": 0.04781273271567694,
+  "sample_sd": 0.04783665702676411,
+  "median": 1.0007269921958613,
+  "min": 0.856356035666052,
+  "max": 1.1403932211176528,
+  "ks": 0.016805728401850573,
+  "p_value": 0.7404,
+  "exceedances": 3701,
+  "p_value_mc_se": 0.006200746555985845,
+  "mean_bootstrap_95": [
+    0.9982870485683129,
+    1.0043025667327847
+  ],
+  "stress_critical_value": 0.02892927869323425,
+  "stress": [
+    {
+      "generator": "Normal",
+      "replicates": 500,
+      "rejected": 21,
+      "rate": 0.042,
+      "wilson_95": [
+        0.027632310108451706,
+        0.06335158575433014
+      ]
+    },
+    {
+      "generator": "Laplace",
+      "replicates": 500,
+      "rejected": 500,
+      "rate": 1.0,
+      "wilson_95": [
+        0.9923756595384479,
+        1
+      ]
+    }
+  ],
+  "histogram_25_bin_peak": 100
+}
