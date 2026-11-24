@@ -23,6 +23,20 @@ On macOS or Linux use `.venv/bin/python`. With NumPy 2.3.5 already installed, ru
 
 For a demonstration, run the analysis and review the power-law comparison, Gaussian diagnostics, and simulation results.
 
+## Results at a glance
+
+The Gaussian fit uses all 1,000 m0 values. The sample mean is **1.00132**, and the fitted standard deviation is **0.04781**. The bootstrap 95% interval for the mean is **0.99829 to 1.00430**.
+
+![Histogram with a fitted Gaussian curve and a normal Q–Q plot](results/gaussian.svg)
+
+The red curve shows the expected histogram shape under the fitted Gaussian. The Q–Q plot compares observed and fitted quantiles. The goodness-of-fit test produced a Monte Carlo p-value of **0.7404** from 4,999 simulated samples refitted under the Gaussian model. The test found no evidence against the model under the independent-sampling assumption. The sample's units and collection procedure are unspecified.
+
+## Power-law comparison
+
+![Comparison of x to the power 1.5 and x squared, shown together and separately](results/power_laws.svg)
+
+The curves meet at x = 0 and x = 1. Between those points, x^1.5 is higher. Beyond x = 1, x² grows faster.
+
 ## References
 
 1. Lilliefors, H. W. (1967). On the Kolmogorov–Smirnov Test for Normality with Mean and Variance Unknown. Journal of the American Statistical Association, 62(318), 399–402. [DOI](https://doi.org/10.1080/01621459.1967.10482916)
